@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 
 /** File import */
 import AuthRoute from './AuthRoute.js';
-import StreamRoute from './StreamRoute.js';
 
 /** App */
 const router = express.Router();
@@ -21,6 +20,5 @@ router.get('/', (req, res) => {
 
 /** other routes */
 router.use('/auth', AuthRoute);
-router.use('/stream', StreamRoute);
 
 export default router;
